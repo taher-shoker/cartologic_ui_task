@@ -17,7 +17,6 @@
 /************ Generall Style*****************/
 body{
     font-family: 'aljazeera';
-    direction: rtl;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -421,12 +420,18 @@ footer .copy-rights p{
     .info-slide{
         visibility: hidden;
     }
+    .navbar-brand span{
+       font-size: 14px;
+    }
     
 }
 
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (min-width: 575.98px) { 
+    .navbar-brand span{
+        font-size: 20px;
+     }
     .fas.fa-chevron-right,.fas.fa-chevron-left{
         display: block;
     }
@@ -457,6 +462,9 @@ footer .copy-rights p{
 
 /* Small devices (landscape phones, less than 768px)*/
 @media (min-width: 767.98px) {
+    body{
+        direction: rtl;
+    }
     .contacts ul{
         width: 20%;
     }
@@ -486,6 +494,7 @@ footer .copy-rights p{
 
 /* Medium devices (tablets, less than 992px)*/
 @media (max-width: 991.98px) { 
+   
  header {
      position: static;
      background-color:#17a2b8 ;
