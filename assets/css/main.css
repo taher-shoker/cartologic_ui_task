@@ -1,0 +1,516 @@
+/*********************************
+**
+**  Template version 1.0
+** UI-Developed by : Taher shoker
+** Contact me at : Taher-elshoker@hotmail.com
+** 
+**
+**********************************/
+/************* Import Arabic Font  ****************/
+@font-face {
+    font-family: 'aljazeera';
+    src: url('../../libs/webfonts/Al-Jazeera-Arabic-Regular.ttf');
+}
+
+
+
+/************ Generall Style*****************/
+body{
+    font-family: 'aljazeera';
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 ;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+
+a {
+    color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+ opacity: .9;
+ color: red;
+}
+
+.btn.btn-info {
+    width: 120px;
+    font-size: 15px;
+    direction: ltr;
+    font-weight: bold;
+}
+.title {
+
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 20px;
+
+}
+.title::before{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 55px;
+    border-top: 3px solid #17a2b8;
+    right: 0;
+    bottom: -10px;
+}
+.txt {
+    font-size: 15px;
+    padding: 16px 0;
+}
+.p-90 {
+    padding: 0px;
+}
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    
+
+}
+
+/******* Table Of Contents *******
+**
+**  1- Section  Header
+**  2- Section  Contacts  
+**  3- Section  Nav 
+**  4- Section  Banner
+**  5- Section  Air Quality
+**  6- Section  Maps
+**  7- Section  Achevments
+**  8- Section  WildLife
+**  9- Section  Links  
+**  2- Section  Footer
+**********************************/
+
+/* Start Header Section */
+
+header{
+  position: absolute;
+  left: 0;
+  top: 10px;
+  z-index: 9;
+  width: 100%;
+
+}
+
+/* End Header Section */
+/* Start Contacts Section */
+.contacts{
+    display: flex;
+    justify-content: flex-end
+}
+.contacts ul {
+    width: 20%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-left: 20px
+    
+
+}
+
+/* End Contacts Section */
+/* Start Nav */
+.navbar-expand-lg {
+    flex-direction:row ;
+}
+
+
+
+
+/* End Nav */
+
+/* Start Banner Section */
+
+.banner{
+    position: relative;
+}
+
+.info-slide{
+    position: absolute;
+    z-index: 9;
+    left: 20px;
+    bottom: 105px;
+    width: 50%;
+    color: #fff;
+    height: 328px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.info-slide .discription {
+    width: 70%;
+    font-size: 14px;
+    background-color: #5e56564d;
+    border-radius: 5px;
+    padding: 8px;
+}
+.info-slide .title::before{
+    display: none
+}
+/* End Banner Section */
+/* Start  Air Quality Section */
+.air-quality .description {
+    height: 100%;
+    align-self: center;
+}
+.air-quality .btn.btn-info {
+    margin: 30px 0 5px 0;
+    float: left;
+
+}
+.air-quality .title::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 20px solid #fff;
+    position: absolute;
+    top: 104px;
+    transform: rotate(45deg);
+    left: -25px;
+    z-index: 100;
+}
+/* End Air Quality Section */
+/* Start Maps Section */
+.maps{
+background-color: #ececec;
+padding: 30px 0;
+}
+.maps .title{
+ font-weight: bold;
+}
+.maps .title::before{
+    right: 215px;
+   }
+.maps .txt {
+    font-size: 12px;
+}
+.maps .map {
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #DDD;
+    
+}
+.map img {
+    width: 100%;
+    padding: 5px;
+    
+}
+.map .title-map{
+    padding: 5px 0;
+}
+/* End Maps Section */
+/* Start Achevments Section */
+.achevments{
+    background-image: url('../imgs/achivements.png');
+    background-size: cover;
+    height: 400px;
+    background-position: center;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 12px;
+}
+.achevments .title{
+    margin: 0;
+}
+.achevments .title::before{
+    display: none;
+  
+}
+.achevments .txt{
+    padding: 0px;
+}
+.achevments .items {
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    flex-wrap: wrap
+}
+.achevments .items .item {
+    text-align: center;
+}
+.achevments .items .item address {
+    padding: 10px 0;
+}
+
+.achevments .items .icon {
+    background-color: #fff;
+    border: 6px solid #85bff2;
+    border-radius:50%;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    
+}
+.achevments .items .icon img{
+    max-height: 100%;
+    max-width: 100%;
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/* End Achevments Section*/
+/* Start WildLife Section */
+
+/* End  WildLife Section */
+/* Start Links Section */
+.links{
+    background-color: #ececec;
+    padding: 20px 0;
+}
+
+.links .link {
+    text-align: center;
+}
+.links .link .btn{
+    width: 90%;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 15px;
+
+}
+.links .link .link-info {
+   
+    padding: 5px;
+    background-color: #fff;
+}
+.links .link .link-info .img-link{
+   background-color: #f3f3f3;
+   
+
+
+}
+.links .link .link-info .img-link img{
+width: 100%;
+}
+.links .link .link-info .info-title {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.fas.fa-chevron-right,.fas.fa-chevron-left{
+    color: #17a2b8;
+    display: block;
+}
+/* End Links Section */
+/* Start Footer  */
+footer{
+    background-color: #333332;
+    padding-top: 20px;
+    color: #858584;
+}
+footer .logo span{
+    color: #fff;
+}
+footer strong {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.part-one .text {
+ font-size: 14px;
+ margin-top: 20px;
+}
+.part-one ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+}
+.part-one ul li {
+  
+    margin: 0 5px;
+
+}
+.part-two {
+    margin-top: 15px;
+}
+.part-two a {
+color: #858584;
+}
+.part-two ul {
+  padding-top:10px ;
+    }
+
+.part-three{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+   
+}
+.part-three ul{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+   
+   
+
+   
+}
+.part-three ul li{
+   margin: 0 10px;
+
+}
+
+footer .copy-rights{
+    background-color: #444443;
+    padding: 10px 0;
+    text-align: center;
+}
+footer .copy-rights p{
+    font-size: 12px;
+    margin-bottom: 0; 
+  } 
+
+
+
+/* End Footer  */
+/*=========================Style for media queries  ============================*/
+@media (min-width: 320px) { 
+    
+    .fas.fa-chevron-right,.fas.fa-chevron-left{
+        display: none;
+    }
+    .contacts ul{
+        width: 100%;
+    }
+    .air-quality .description{
+        text-align: center
+    }
+    .air-quality .img-content {
+        padding-left: 0px;
+        padding-right: 0px;
+       
+        
+    }
+    .title::before {
+        display: none;
+    }
+    .part-one,.part-two {
+        text-align: center
+    }
+    .part-one ul,.part-three ul {
+        justify-content: center
+    }
+    .carousel-indicators li{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    
+    }
+    .info-slide{
+        visibility: hidden;
+    }
+    
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (min-width: 575.98px) { 
+    .fas.fa-chevron-right,.fas.fa-chevron-left{
+        display: block;
+    }
+    .contacts ul{
+        width: 50%;
+    }
+    .p-90{
+        padding: 0 50px
+    }
+    .info-slide{
+        visibility: visible;
+        left: 20%;
+        bottom: 20%;
+        height: 300px;
+    }
+    .title::before {
+        display: block;
+    }
+    .air-quality .description{
+        text-align: right
+    }
+    .air-quality .img-content {
+        padding-left: 0px;
+       
+        
+    }
+ }
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (min-width: 767.98px) {
+    .contacts ul{
+        width: 20%;
+    }
+    .p-90{
+        padding: 0 90px
+    }
+    .air-quality .img-content {
+        padding-left: 0;
+        
+    }
+    .part-one,.part-two {
+        text-align: right
+    }
+    .part-one ul,.part-three ul {
+        justify-content: flex-start
+    }
+    .info-slide{
+        visibility: visible;
+        left: 6%;
+        bottom: 14%;
+      
+    }
+    .links .link .link-info .info-title{
+        font-size: 10px;
+    }
+ }
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+ header {
+     position: static;
+     background-color:#17a2b8 ;
+     padding-top: 5px;
+ }
+.contacts{
+    justify-content: center;
+}
+.navbar-expand-lg .navbar-nav{
+    flex-direction: column
+}
+
+
+ }
+ 
+
+/* Large devices (desktops, greate than 992px)*/
+@media (min-width: 991px ) {
+    .navbar-expand-lg .navbar-collapse{
+        justify-content: space-around
+    }
+    .navbar-expand-lg .navbar-nav {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+  
+ 
+ }
